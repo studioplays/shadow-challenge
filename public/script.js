@@ -148,7 +148,7 @@ function endGame(){
 
 // ---------------- SHARE LINK ----------------
 shareBtn.addEventListener("click", ()=>{
-  const link = `${RENDER_URL}/shadow?score=${score}`;
+  const link = `${RENDER_URL}/shadow`; // rimuove ?score
   navigator.clipboard.writeText(link);
   alert("Link copiato! Condividilo con amici: "+link);
 });
