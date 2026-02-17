@@ -139,7 +139,8 @@ alert("Game Over! Punteggio: "+score);
 }
 
 shareBtn.addEventListener("click",()=>{
-const link=`https://tuosito.com/shadow?score=${score}`;
+const link = `https://shadow-challenge.onrender.com/shadow?score=${score}`;
+
 navigator.clipboard.writeText(link);
 alert("Link copiato! Condividilo con amici: "+link);
 });
