@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadow Challenge Social</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video id="video" autoplay playsinline></video>
+<canvas id="gameCanvas"></canvas>
+
+<div class="ui">
+<div class="score-timer">
+<div>Punti: <span id="score">0</span></div>
+<div>Tempo: <span id="timer">20</span>s</div>
+</div>
+<div class="buttons">
+<button id="startBtn">START</button>
+<button id="shareBtn">Condividi</button>
+<button id="filterBtn">Filtri</button>
+</div>
+</div>
+
+<div class="filter-select hidden">
+<button class="filter" data-filter="0">Mystic</button>
+<button class="filter" data-filter="1">Dream</button>
+<button class="filter" data-filter="2">Glow</button>
+<button class="filter" data-filter="3">Shadow</button>
+<button class="filter" data-filter="4">Spark</button>
+</div>
+
+<div class="shop">
+<button class="boost" data-type="slow">Slow Motion (€0,99)</button>
+<button class="boost" data-type="magnet">Magnet (€1,99)</button>
+</div>
+
+<!-- Suoni -->
+<audio id="tapSound" src="sounds/tap.mp3"></audio>
+<audio id="gameOverSound" src="sounds/gameover.mp3"></audio>
+<audio id="boostSound" src="sounds/boost.mp3"></audio>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
