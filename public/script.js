@@ -148,10 +148,11 @@ function endGame(){
 
 // ---------------- SHARE LINK ----------------
 shareBtn.addEventListener("click", ()=>{
-  const link = `${RENDER_URL}/shadow`; // rimuove ?score
+  const link = `${RENDER_URL}`; // solo la root, senza /shadow e senza ?score
   navigator.clipboard.writeText(link);
   alert("Link copiato! Condividilo con amici: "+link);
 });
+
 
 // ---------------- FILTERS ----------------
 filterBtn.addEventListener("click", ()=>filterSelect.classList.toggle("hidden"));
