@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const stripe = require("stripe")("sk_test_51T133pHiM2ECEZSEg03XFcjBMgEWOK47w1zHITKmueJyYMtNqYc1YP9VvcfBz9ZGxGifk4RaCOeab6uwCz5dLWqG00PV5eHTPK");
+const stripe = require("stripe")("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");
 const cors = require("cors");
 const path = require("path");
 
@@ -14,8 +14,8 @@ const PORT = 3000;
 
 // ⚠️ Sostituisci con i tuoi veri price_id Stripe
 const prices = {
-slow: "price_1T1udOHiM2ECEZSEbDEXwIOB",
-magnet: "price_1T1udqHiM2ECEZSEbojFQm8T"
+slow: "price_1T1wK9H9wLsGrx9rY7M2Kvwr",
+magnet: "price_1T1wKTH9wLsGrx9rlO1QjalH"
 };
 
 // ---------------- CREATE CHECKOUT ----------------
@@ -73,3 +73,8 @@ res.json({ success: false });
 app.listen(PORT, () => {
 console.log(`Server avviato su http://localhost:${PORT}`);
 });
+
+
+
+
+
